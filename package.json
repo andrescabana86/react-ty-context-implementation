@@ -1,0 +1,86 @@
+{
+  "name": "react-ty-context-implementation",
+  "version": "1.0.0",
+  "description": "Implements React Context API with Typescript experimental decorators",
+  "main": "index.tsx",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "format": "prettier --write \"**/*.+(ts|tsx)\"",
+    "lint": "eslint src/** --fix",
+    "serve": "live-server ./build",
+    "start": "webpack serve --progress --color --config webpack.config.js",
+    "test": "jest",
+    "test:watch": "jest --watch --updateSnapshot"
+  },
+  "repository": "https://github.com/andrescabana86/react-ty-context-implementation.git",
+  "keywords": [
+    "react",
+    "context",
+    "api",
+    "typescript",
+    "decorators"
+  ],
+  "author": "andrescabana86",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrescabana86/giphy-api-testing/issues"
+  },
+  "homepage": "https://github.com/andrescabana86/react-ty-context-implementation#readme",
+  "engines": {
+    "node": "15.2.x",
+    "npm": "7.0.x"
+  },
+  "jest": {
+    "automock": false,
+    "bail": true,
+    "moduleNameMapper": {
+      "^.+\\.(sass)$": "identity-obj-proxy",
+      "^@api(.*)$": "<rootDir>/src/api$1",
+      "^@components(.*)$": "<rootDir>/src/components$1",
+      "^@containers(.*)$": "<rootDir>/src/containers$1"
+    },
+    "preset": "ts-jest/presets/js-with-ts",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.ts"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.1",
+    "@types/jest": "^26.0.15",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.8",
+    "@types/webpack": "^4.41.23",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "@webpack-cli/serve": "^1.0.1",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-html": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "express": "^4.17.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "jest-fetch-mock": "^3.0.3",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.3",
+    "weak-napi": "^2.0.2",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "css-loader": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "live-server": "^1.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "sass": "^1.28.0",
+    "sass-loader": "^10.0.4",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.7",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
+    "typescript": "^4.0.3",
+    "webpack": "^5.2.0"
+  }
+}
