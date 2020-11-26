@@ -1,0 +1,20 @@
+{
+  "extends": ["plugin:prettier/recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint/eslint-plugin", "@typescript-eslint", "html"],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "space-in-parens": "error"
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  }
+}
